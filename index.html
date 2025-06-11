@@ -250,7 +250,15 @@
 <br>
 <br>
 <br>
-
+<div class="list_container">
+<ul class="ul-check">
+                <li>4 <span class="span_red">capsules</span> a day</li>
+                <li>2800mgs of highly potent male performance ingredients</li>
+                <li>3 ingredients with a highly standardized extract</li>
+        
+            </ul>
+            </div>
+<div class="is_possible">
 <b class="text">
     Is it Possible to Have More Results? 
 </b>
@@ -272,7 +280,7 @@
 </p>
 
 <br>
-
+</div>
 <div class="container">
     <div class="prime-vs-edge">
         <div class="purple">
@@ -396,14 +404,15 @@
 <br>
 
 <div class="labels">
-    <label>
-        <img src="./images/label1.jpg" alt="label" class="responsive-img">
-    </label>
+    <input type="radio" name="product_selected" id="product_1" value="elite">
+    <label for="product_1" class="product month1">
+        <img src="./images/label1.jpg" alt="label 1" class="responsive-img" id="productImage1">        
+        </label>
 
     <br>
 
     <label>
-        <img src="./images/label2.jpg" alt="label2" class="responsive-img">
+        <img src="./images/label2.jpg" alt="label2" class="responsive-img" id="productImage2">
     </label>
 
     <br>
@@ -422,7 +431,7 @@
     <br>
 
     <label>
-        <img src="./images/label3.jpg" alt="label3" class="responsive-img">
+        <img src="./images/label3.jpg" alt="label3" class="responsive-img" id="productImage3">
     </label>
 </div>
 
@@ -441,60 +450,74 @@
         <div class="form-row">
             <div class="form-group">
                 <label for="first-name">* FIRST NAME:</label>
-                <input type="text" id="first-name" name="first-name">
+                <input type="text" id="first-name" name="first-name" required>
+                <span class="error-message" id="error-first-name"></span>
             </div>
             <div class="form-group">
                 <label for="last-name">* LAST NAME:</label>
-                <input type="text" id="last-name" name="last-name">
+                <input type="text" id="last-name" name="last-name" required>
+                <span class="error-message" id="error-last-name"></span>
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group">
                 <label for="email">* EMAIL:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="error-email"></span>
             </div>
             <div class="form-group">
                 <label for="phone">* PHONE:</label>
-                <input type="tel" id="phone" name="phone">
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error-message" id="error-phone"></span>
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group full-width">
                 <label for="street-address">* STREET ADDRESS (INCLUDING APT #) :</label>
-                <input type="text" id="street-address" name="street-address">
+                <input type="text" id="street-address" name="street-address" required>
+                <span class="error-message" id="error-street-address"></span>
             </div>
             <div class="form-group">
                 <label for="city">* CITY:</label>
-                <input type="text" id="city" name="city">
+                <input type="text" id="city" name="city" required>
+                <span class="error-message" id="error-city"></span>
             </div>
         </div>
 
         <div class="form-row form-row-country-state-zip">
             <div class="form-group">
                 <label for="country">* COUNTRY:</label>
-                <select id="country" name="country">
-                    <option value="united-states">UNITED STATES</option>
-                    </select>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option> <option value="united-states">UNITED STATES</option>
+                </select>
+                <span class="error-message" id="error-country"></span>
             </div>
             <div class="form-group">
                 <label for="state-province">* STATE / PROVINCE</label>
-                <select id="state-province" name="state-province">
-                    <option value="">Select State / Province</option>
-                    </select>
+                <select id="state-province" name="state-province" required>
+                    <option value="">Select State / Province</option> <option value="florida-state">FLORIDA</option> </select>
+                <span class="error-message" id="error-state-province"></span>
             </div>
-            <div class="form-group"> <label for="zip-code">* ZIP CODE:</label>
-                <input type="text" id="zip-code" name="zip-code">
+            <div class="form-group">
+                <label for="zip-code">* ZIP CODE:</label>
+                <input type="text" id="zip-code" name="zip-code" required>
+                <span class="error-message" id="error-zip-code"></span>
             </div>
         </div>
     </form>
 </div>
 
 <div class="step-button">
-    <button class="button">CONTINUE TO STEP 2</button>
+    <button type="submit" class="button" id="continueButton">CONTINUE TO STEP 2</button>
 </div>
 
+<div id="validationMessageContainer" style="display: none; text-align: center; margin-top: 20px;">
+    <img src="./images/alert.png" alt="Warning!" id="validationWarningImage" style="max-width: 150px; height: auto; margin-bottom: 10px;">
+    <p style="color: red; font-weight: bold;">
+There was an error filling out the form. Please check the marked fields.</p>
+</div>
 <br>
 <br>
 <br>
@@ -551,8 +574,7 @@
     </div>
 </footer>
 
-</body>
-</html>
+<script src="./index.js"></script>
 
 </body>
 </html>

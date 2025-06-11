@@ -266,6 +266,15 @@ li {
     margin-right: auto;
 }
 
+.responsive-img-sale {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -280,6 +289,39 @@ b {
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
+}
+
+.is_possible p{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+.list_container{
+    max-width: 500px;
+    margin: 0 auto 0 auto;
+}
+
+.ul-check{
+    color: rgb(241, 37, 37);
+    list-style-type: circle;
+    background-color: black;
+}
+
+ul.ul-check{
+    list-style-type: circle;
+}
+
+.span_red{
+    color: red;
+    font-size: 18px;
+}
+
+.is_possible::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #8a06ce;
 }
 
 .prime-vs-edge {
@@ -674,4 +716,156 @@ footer {
 
 .footer-social-icons img:hover {
     transform: translateY(-3px);
+}
+
+input[type="radio"][name="product_selected"] {
+    display: none; /* Sakriva samo vizuelni prikaz dugmeta */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block; 
+    min-height: 1em;
+}
+
+.invalid-field {
+    border: 2px solid red !important;
+}
+
+.invalid-label {
+    color: red !important; /* Promeni boju teksta labele u crveno */
+}
+
+@media (max-width: 768px) {
+    /* Generalni stilovi za manje ekrane */
+    body {
+        font-size: 16px; /* Prilagodi osnovnu veličinu fonta */
+    }
+
+    .container, .container-top {
+        padding: 0 15px; /* Dodaj malo razmaka od ivica */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Smanji veličinu h1 */
+    }
+    h2 {
+        font-size: 1.8em; /* Smanji veličinu h2 */
+    }
+    /* Smanji veličinu fonta za sve p tagove ako je potrebno */
+    p {
+        font-size: 0.95em;
+    }
+
+    /* HEADER */
+    .top-bar {
+        flex-direction: column; /* Stack-uj levi i desni deo headera */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .top-right {
+        align-items: center; /* Centriraj elemente u top-right */
+    }
+
+    .social-phone {
+        flex-wrap: wrap; /* Omogući prelamanje ikonica i broja telefona */
+        justify-content: center;
+        gap: 10px;
+        font-size: 0.9em; /* Smanji font za telefon */
+    }
+
+    .phone-number {
+        font-size: 16px; /* Smanji broj telefona */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack-uj navigacione linkove vertikalno */
+        gap: 5px;
+        text-align: center;
+    }
+    /* Razmisli o skrivanju nav-links i implementaciji hamburger menija za pravu mobilnu navigaciju */
+
+    /* SLIKE I KONTEJNERI SLIKA */
+    .fastfood-stakehouse,
+    .used-exotic,
+    .with-and-without-ultracore,
+    .prime-vs-edge,
+    .prime-and-edge {
+        flex-direction: column; /* Stack-uj slike vertikalno */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .fastfood-stakehouse img,
+    .used-exotic img,
+    .with-and-without-ultracore img,
+    .prime-vs-edge img,
+    .prime-and-edge img {
+        flex: 1 1 100%; /* Neka svaka slika zauzme punu širinu */
+        max-width: 90%; /* Daj malo paddinga */
+    }
+
+    /* LISTE */
+    .checked-top ul,
+    .checked-middle ul,
+    .ul-check {
+        padding-left: 20px; /* Smanji levi padding za liste */
+    }
+    .checked-top li,
+    .checked-middle li,
+    .ul-check li {
+        font-size: 0.9em; /* Smanji font u listama */
+        line-height: 1.4; /* Podesi razmak između linija */
+        word-wrap: break-word; /* Omogući prelom dugačkih reči */
+    }
+    .checked-top img,
+    .checked-middle img,
+    .ul-check img {
+        width: 20px; /* Smanji veličinu ikonice */
+        height: 20px;
+    }
+
+    /* FORMA */
+    .form-row {
+        flex-direction: column; /* Stack-uj grupe polja vertikalno */
+        gap: 15px; /* Razmak između grupa */
+    }
+
+    .form-group {
+        width: 100%; /* Neka svaka grupa zauzme punu širinu */
+        max-width: 100%; /* Osiguraj da se širi na raspoloživu širinu */
+    }
+
+    .form-group label {
+        font-size: 0.9em; /* Smanji font labela ako su prevelike */
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column; /* Stack-uj levi i desni deo futera */
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 15px; /* Dodaj padding za mobilni */
+    }
+
+    .footer-left, .footer-right {
+        align-items: center; /* Centriraj elemente u futeru */
+        flex-basis: auto; /* Resetuj flex-basis */
+        flex-grow: 0;
+    }
+
+    .footer-nav-top,
+    .footer-nav-bottom {
+        justify-content: center; /* Centriraj navigacione linkove u futeru */
+        gap: 10px;
+    }
+
+    .footer-nav-top a,
+    .footer-nav-bottom a {
+        font-size: 13px; /* Smanji font za linkove u futeru */
+    }
 }

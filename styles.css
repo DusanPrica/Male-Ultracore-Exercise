@@ -503,8 +503,12 @@ hr {
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
     font-weight: bold;
     font-size: 16px;
+    margin: 40px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .underline {
@@ -846,6 +850,12 @@ input[type="radio"][name="product_selected"] {
         font-size: 2em;
         margin: 15px 0;
     }
+
+    .save-big {
+        flex-direction: column;
+        align-items: center;  
+        gap: 15px; 
+        padding: 0 10px; 
 
     .form-row {
         flex-direction: column;

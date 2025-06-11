@@ -751,7 +751,7 @@ input[type="radio"][name="product_selected"] {
     color: red !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
     body {
         font-size: 16px;
     }
@@ -857,7 +857,7 @@ input[type="radio"][name="product_selected"] {
         gap: 15px; 
         padding: 0 10px; 
     }
-    
+
     .form-row {
         flex-direction: column;
         gap: 15px;

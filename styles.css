@@ -3,6 +3,7 @@ body {
   background: white;
   color: white;
   font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
 header {
@@ -36,7 +37,6 @@ header {
   display: flex;
   align-items: center;
   gap: 15px;
-  white-space: nowrap;
 }
 
 .social-phone a img {
@@ -718,7 +718,6 @@ footer {
     color: #b0b0b0;
     text-decoration: none;
     font-size: 15px;
-    white-space: nowrap;
     transition: color 0.3s ease;
 }
 

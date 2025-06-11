@@ -116,10 +116,19 @@ nav {
 }
 
 .top-pictures {
-    display: grid;
-    gap: 50px;
-    justify-items: center;
-    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+.top-pictures img {
+    max-width: 100%;
+    height: auto;
+    flex: 0 1 50%;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -238,6 +247,7 @@ li {
     color: black;
     text-align: center;
     align-items: center;
+    padding-top: 20px;
     font-size: 50px;
     font-family: "Oswald", sans-serif;
 }
@@ -363,13 +373,18 @@ ul.ul-check{
 }
 
 .prime-and-edge {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    padding: 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
-.ultra-prime {
+.ultra-prime,
+.ultra-edge {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -409,12 +424,6 @@ ul.ul-check{
     right: 0;  
 }
 
-.ultra-edge {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 250px;
-}
 
 .edge-header {
     padding: 20px 25px;
@@ -735,24 +744,23 @@ input[type="radio"][name="product_selected"] {
 }
 
 .invalid-label {
-    color: red !important; /* Promeni boju teksta labele u crveno */
+    color: red !important;
 }
 
 @media (max-width: 768px) {
-    /* Generalni stilovi za manje ekrane */
     body {
-        font-size: 16px; /* Prilagodi osnovnu veličinu fonta */
+        font-size: 16px;
     }
 
     .container, .container-top {
-        padding: 0 15px; /* Dodaj malo razmaka od ivica */
+        padding: 0 15px;
     }
 
     h1 {
-        font-size: 2.5em; /* Smanji veličinu h1 */
+        font-size: 2.5em;
     }
     h2 {
-        font-size: 1.8em; /* Smanji veličinu h2 */
+        font-size: 1.8em;
     }
     /* Smanji veličinu fonta za sve p tagove ako je potrebno */
     p {
@@ -785,6 +793,15 @@ input[type="radio"][name="product_selected"] {
         flex-direction: column; /* Stack-uj navigacione linkove vertikalno */
         gap: 5px;
         text-align: center;
+    }
+
+    .top-pictures {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top-pictures img {
+        max-width: 90%;
     }
     /* Razmisli o skrivanju nav-links i implementaciji hamburger menija za pravu mobilnu navigaciju */
 
@@ -826,6 +843,11 @@ input[type="radio"][name="product_selected"] {
     .ul-check img {
         width: 20px; /* Smanji veličinu ikonice */
         height: 20px;
+    }
+
+    .prime-and-edge .text {
+        font-size: 2em;
+        margin: 15px 0;
     }
 
     /* FORMA */

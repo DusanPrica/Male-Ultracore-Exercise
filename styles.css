@@ -856,7 +856,8 @@ input[type="radio"][name="product_selected"] {
         align-items: center;  
         gap: 15px; 
         padding: 0 10px; 
-
+    }
+    
     .form-row {
         flex-direction: column;
         gap: 15px;

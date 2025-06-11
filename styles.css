@@ -728,7 +728,7 @@ footer {
 }
 
 input[type="radio"][name="product_selected"] {
-    display: none; /* Sakriva samo vizuelni prikaz dugmeta */
+    display: none;
 }
 
 .error-message {
@@ -759,38 +759,38 @@ input[type="radio"][name="product_selected"] {
     h1 {
         font-size: 2.5em;
     }
+
     h2 {
         font-size: 1.8em;
     }
-    /* Smanji veličinu fonta za sve p tagove ako je potrebno */
+    
     p {
         font-size: 0.95em;
     }
 
-    /* HEADER */
     .top-bar {
-        flex-direction: column; /* Stack-uj levi i desni deo headera */
+        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
     .top-right {
-        align-items: center; /* Centriraj elemente u top-right */
+        align-items: center;
     }
 
     .social-phone {
-        flex-wrap: wrap; /* Omogući prelamanje ikonica i broja telefona */
+        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
-        font-size: 0.9em; /* Smanji font za telefon */
+        font-size: 0.9em;
     }
 
     .phone-number {
-        font-size: 16px; /* Smanji broj telefona */
+        font-size: 16px;
     }
 
     .nav-links {
-        flex-direction: column; /* Stack-uj navigacione linkove vertikalno */
+        flex-direction: column;
         gap: 5px;
         text-align: center;
     }
@@ -803,15 +803,13 @@ input[type="radio"][name="product_selected"] {
     .top-pictures img {
         max-width: 90%;
     }
-    /* Razmisli o skrivanju nav-links i implementaciji hamburger menija za pravu mobilnu navigaciju */
-
-    /* SLIKE I KONTEJNERI SLIKA */
+    
     .fastfood-stakehouse,
     .used-exotic,
     .with-and-without-ultracore,
     .prime-vs-edge,
     .prime-and-edge {
-        flex-direction: column; /* Stack-uj slike vertikalno */
+        flex-direction: column;
         align-items: center;
         gap: 20px;
     }
@@ -821,27 +819,26 @@ input[type="radio"][name="product_selected"] {
     .with-and-without-ultracore img,
     .prime-vs-edge img,
     .prime-and-edge img {
-        flex: 1 1 100%; /* Neka svaka slika zauzme punu širinu */
-        max-width: 90%; /* Daj malo paddinga */
+        flex: 1 1 100%;
+        max-width: 90%;
     }
 
-    /* LISTE */
     .checked-top ul,
     .checked-middle ul,
     .ul-check {
-        padding-left: 20px; /* Smanji levi padding za liste */
+        padding-left: 20px;
     }
     .checked-top li,
     .checked-middle li,
     .ul-check li {
-        font-size: 0.9em; /* Smanji font u listama */
-        line-height: 1.4; /* Podesi razmak između linija */
-        word-wrap: break-word; /* Omogući prelom dugačkih reči */
+        font-size: 0.9em;
+        line-height: 1.4;
+        word-wrap: break-word;
     }
     .checked-top img,
     .checked-middle img,
     .ul-check img {
-        width: 20px; /* Smanji veličinu ikonice */
+        width: 20px;
         height: 20px;
     }
 
@@ -850,44 +847,42 @@ input[type="radio"][name="product_selected"] {
         margin: 15px 0;
     }
 
-    /* FORMA */
     .form-row {
-        flex-direction: column; /* Stack-uj grupe polja vertikalno */
-        gap: 15px; /* Razmak između grupa */
+        flex-direction: column;
+        gap: 15px;
     }
 
     .form-group {
-        width: 100%; /* Neka svaka grupa zauzme punu širinu */
-        max-width: 100%; /* Osiguraj da se širi na raspoloživu širinu */
+        width: 100%;
+        max-width: 100%;
     }
 
     .form-group label {
-        font-size: 0.9em; /* Smanji font labela ako su prevelike */
+        font-size: 0.9em;
     }
 
-    /* FOOTER */
     .footer-container {
-        flex-direction: column; /* Stack-uj levi i desni deo futera */
+        flex-direction: column; 
         align-items: center;
         text-align: center;
         gap: 20px;
-        padding: 20px 15px; /* Dodaj padding za mobilni */
+        padding: 20px 15px;
     }
 
     .footer-left, .footer-right {
-        align-items: center; /* Centriraj elemente u futeru */
-        flex-basis: auto; /* Resetuj flex-basis */
+        align-items: center;
+        flex-basis: auto;
         flex-grow: 0;
     }
 
     .footer-nav-top,
     .footer-nav-bottom {
-        justify-content: center; /* Centriraj navigacione linkove u futeru */
+        justify-content: center;
         gap: 10px;
     }
 
     .footer-nav-top a,
     .footer-nav-bottom a {
-        font-size: 13px; /* Smanji font za linkove u futeru */
+        font-size: 13px;
     }
 }

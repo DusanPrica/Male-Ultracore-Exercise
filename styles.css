@@ -1,9 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 0;
   background: white;
   color: white;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 header {
@@ -38,6 +43,8 @@ header {
   align-items: center;
   gap: 15px;
   white-space: normal;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social-phone a img {
@@ -805,6 +812,7 @@ input[type="radio"][name="product_selected"] {
     .social-phone {
         flex-wrap: wrap;
         justify-content: center;
+        white-space: normal;
         gap: 10px;
         font-size: 0.9em;
     }
@@ -841,7 +849,6 @@ input[type="radio"][name="product_selected"] {
 
     .fastfood-stakehouse img,
     .used-exotic img,
-    .with-and-without-ultracore img,
     .prime-vs-edge img,
     .prime-and-edge img {
         flex: 0 1 100%;
@@ -918,5 +925,6 @@ input[type="radio"][name="product_selected"] {
     .footer-nav-top a,
     .footer-nav-bottom a {
         font-size: 13px;
+        white-space: normal;
     }
 }

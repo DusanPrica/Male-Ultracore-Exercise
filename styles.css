@@ -3,6 +3,7 @@ body {
   background: white;
   color: white;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -303,6 +304,12 @@ li {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 b {
